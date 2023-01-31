@@ -1,15 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Content } from './Content'
-
-interface ITitleProps {
-    text: string
-}
-
-const Title = (props: ITitleProps) => {
-    console.log(props)
-    return <h1>Hello, {props.text}</h1>
-}
+import Title from './Title'
 
 function App() {
     return (
@@ -17,8 +9,8 @@ function App() {
             <Title text="React" />
             <Title text="TS" />
             <Content
-                text1="Hello, world 1"
-                text2="Hello, world 2"
+                text1="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus eaque optio dolor necessitatibus, officia doloremque, sed maxime inventore neque dolores ullam asperiores."
+                text2="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus eaque optio dolor necessitatibus, officia doloremque, sed maxime inventore neque dolores ullam asperiores."
                 year={2023}
             />
         </>
