@@ -4,7 +4,6 @@ import productsArray from 'utils/productsArray'
 
 type Props = {}
 
-
 const ProductsList = (props: Props) => {
     return (
         <>
@@ -21,6 +20,7 @@ const ProductsList = (props: Props) => {
                         type,
                         capacity,
                         price,
+                        image,
                     }) => (
                         <Grid item xs={12} sm={6} md={4} key={id}>
                             {''}
@@ -30,6 +30,7 @@ const ProductsList = (props: Props) => {
                                 type={type}
                                 capacity={capacity}
                                 price={price}
+                                image={image}
                             />
                         </Grid>
                     )
