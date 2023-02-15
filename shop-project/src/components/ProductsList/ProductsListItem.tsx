@@ -50,6 +50,7 @@ const ProductsListItem = ({
                     <Button
                         variant="outlined"
                         onClick={() => onDecrement()}
+                        disabled={count <= 0}
                     >
                         -
                     </Button>
@@ -57,6 +58,7 @@ const ProductsListItem = ({
                     <Button
                         variant="outlined"
                         onClick={() => onIncrement()}
+                        disabled={count >= 14}
                     >
                         +
                     </Button>
