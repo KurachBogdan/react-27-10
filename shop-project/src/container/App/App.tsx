@@ -8,7 +8,7 @@ import { useState } from 'react'
 type Props = {}
 
 type ProductsInCart = {
-    [id:number]: number
+    [id: number]: number
 }
 
 const App = (props: Props) => {
@@ -17,7 +17,12 @@ const App = (props: Props) => {
         2: 5,
     })
 
-    const addProductToCart = (count: number, price: number) => {}
+    const addProductToCart = (id: number, count: number) => {
+        setProductsInCart((prevState) => ({
+            ...prevState,
+            [id]: (prevState[id] || 0) + count,
+        }))
+    }
 
     return (
         <>
